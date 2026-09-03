@@ -27,7 +27,9 @@ Tecnologias: Node.js, Express e CORS. Os dados são persistidos em `data.json` d
 ## 4. Front-end
 Aplicação React com formulário de criação/edição e lista de notas. O front-end está configurado para consumir a API publicada no Render.
 
-A URL também pode ser alterada por meio da variável de ambiente `VITE_API_URL`.
+**URL publicada na Vercel:** https://nicolas-aula05-notas.vercel.app/
+
+A URL da API também pode ser alterada por meio da variável de ambiente `VITE_API_URL`.
 
 ## 5. Postman
 A coleção está em `postman/CRUD-Notas.postman_collection.json` e contém as quatro operações principais: GET, POST, PUT e DELETE.
@@ -41,7 +43,7 @@ A variável `baseUrl` da coleção já aponta para:
 - Servidor básico no Render: https://nicolas-aula05-servidor.onrender.com/
 - Back-end CRUD no Render: https://nicolas-aula05-notas-api.onrender.com/
 - Endpoint GET das notas: https://nicolas-aula05-notas-api.onrender.com/api/notes
-- Front-end no Vercel: **aguardando conclusão do primeiro deploy do projeto na conta Vercel**
+- Front-end no Vercel: https://nicolas-aula05-notas.vercel.app/
 - Coleção Postman: `aula-05-api-rest/postman/CRUD-Notas.postman_collection.json`
 - Link público da coleção Postman: **depende da publicação da coleção em uma conta Postman**
 
@@ -57,4 +59,4 @@ Para a entrega final, registrar capturas das telas abaixo:
 8. requisição DELETE no Postman.
 
 ## 8. Conclusão
-A atividade aplica os principais conceitos de integração entre front-end e back-end: rotas REST, métodos HTTP, JSON, validação básica, CORS, consumo assíncrono e operações de CRUD. O back-end e o servidor básico foram configurados e publicados no Render, enquanto o front-end foi preparado para publicação na Vercel.
+A atividade aplica os principais conceitos de integração entre front-end e back-end: rotas REST, métodos HTTP, JSON, validação básica, CORS, consumo assíncrono e operações de CRUD. O servidor básico e o back-end foram publicados no Render, e o front-end React foi publicado na Vercel.
