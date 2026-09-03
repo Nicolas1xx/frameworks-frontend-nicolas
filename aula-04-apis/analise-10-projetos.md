@@ -2,18 +2,18 @@
 
 Objetivo: observar como aplicações front-end reais integram APIs REST, lidam com JSON e exibem dados de forma dinâmica.
 
-| # | Tipo de projeto | Framework | API utilizada | O que pratica |
-|---|---|---|---|---|
-| 1 | Pokédex | React | PokeAPI | Busca e renderização de Pokémon |
-| 2 | Previsão do tempo | React | OpenWeatherMap | Requisições por cidade e estados de carregamento |
-| 3 | Busca de usuários | React | GitHub API | Pesquisa e exibição de perfis |
-| 4 | Pokédex | Vue | PokeAPI | Componentes e consumo REST |
-| 5 | Clima | Vue | OpenWeatherMap | Formulários e dados assíncronos |
-| 6 | Catálogo de filmes | Angular | TMDB | Listas, serviços e imagens |
-| 7 | Clima com localização | Angular | OpenWeatherMap / GeoDB | Integração de mais de uma API |
-| 8 | Catálogo de filmes | Next.js | TMDB | Renderização com dados externos |
-| 9 | Exploração espacial | Next.js | NASA APOD | Consumo de API pública com mídia |
-| 10 | Filmes e detalhes | Next.js | TMDB | Rotas dinâmicas e detalhes por ID |
+| # | Projeto | Framework | API utilizada | Repositório | O que pratica |
+|---|---|---|---|---|---|
+| 1 | PokeAPI React | React | PokeAPI | [Onnichan/pokeapi-react](https://github.com/Onnichan/pokeapi-react) | Busca e renderização de Pokémon |
+| 2 | React Weather App | React | OpenWeatherMap | [arasgungore/react-weather-app](https://github.com/arasgungore/react-weather-app) | Requisições por cidade e estados de carregamento |
+| 3 | GitHub API Search | React | GitHub API | [raphael-ferreira/github-api-search](https://github.com/raphael-ferreira/github-api-search) | Pesquisa e exibição de perfis |
+| 4 | Vue Pokedex | Vue.js | PokeAPI | [JohannesL2/vue-pokedex](https://github.com/JohannesL2/vue-pokedex) | Componentes e consumo REST |
+| 5 | Vue Weather | Vue.js | OpenWeatherMap | [hamdigaied/vue-weather](https://github.com/hamdigaied/vue-weather) | Formulários e dados assíncronos |
+| 6 | Angular Movies | Angular | TMDB | [tastejs/angular-movies](https://github.com/tastejs/angular-movies) | Listas, serviços e imagens |
+| 7 | Angular Weather App | Angular | OpenWeatherMap / GeoDB | [IevgeniiaAbdulina/angular-weather-app](https://github.com/IevgeniiaAbdulina/angular-weather-app) | Integração de mais de uma API |
+| 8 | TMDB 2.0 | Next.js | TMDB | [AhmedSemih/TMDB-2.0](https://github.com/AhmedSemih/TMDB-2.0) | Renderização com dados externos |
+| 9 | NASA Explorer | Next.js | NASA APOD | [stomarp/nasa-explorer](https://github.com/stomarp/nasa-explorer) | Consumo de API pública com mídia |
+| 10 | Movies Next | Next.js | TMDB | [dsidous/movies-next](https://github.com/dsidous/movies-next) | Rotas dinâmicas e detalhes por ID |
 
 ## Conceitos identificados
 
