@@ -1,10 +1,61 @@
 {
-  "info":{"name":"Aula 05 - CRUD de Notas","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
-  "variable":[{"key":"baseUrl","value":"http://localhost:3000"}],
-  "item":[
-    {"name":"GET - Listar notas","request":{"method":"GET","url":{"raw":"{{baseUrl}}/api/notes","host":["{{baseUrl}}"],"path":["api","notes"]}}},
-    {"name":"POST - Criar nota","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\n  \"titulo\": \"Minha nota\",\n  \"conteudo\": \"Conteúdo de exemplo\"\n}"},"url":{"raw":"{{baseUrl}}/api/notes","host":["{{baseUrl}}"],"path":["api","notes"]}}},
-    {"name":"PUT - Atualizar nota","request":{"method":"PUT","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\n  \"titulo\": \"Nota atualizada\",\n  \"conteudo\": \"Novo conteúdo\"\n}"},"url":{"raw":"{{baseUrl}}/api/notes/ID_DA_NOTA","host":["{{baseUrl}}"],"path":["api","notes","ID_DA_NOTA"]}}},
-    {"name":"DELETE - Excluir nota","request":{"method":"DELETE","url":{"raw":"{{baseUrl}}/api/notes/ID_DA_NOTA","host":["{{baseUrl}}"],"path":["api","notes","ID_DA_NOTA"]}}}
+  "info": {
+    "name": "Aula 05 - CRUD de Notas",
+    "description": "Coleção Postman para testar a API REST de notas publicada no Render.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://nicolas-aula05-notas-api.onrender.com"
+    },
+    {
+      "key": "noteId",
+      "value": "ID_DA_NOTA"
+    }
+  ],
+  "item": [
+    {
+      "name": "GET - Listar notas",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/notes"
+      }
+    },
+    {
+      "name": "POST - Criar nota",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Minha nota\",\n  \"conteudo\": \"Conteúdo de exemplo\"\n}"
+        },
+        "url": "{{baseUrl}}/api/notes"
+      }
+    },
+    {
+      "name": "PUT - Atualizar nota",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Nota atualizada\",\n  \"conteudo\": \"Novo conteúdo\"\n}"
+        },
+        "url": "{{baseUrl}}/api/notes/{{noteId}}"
+      }
+    },
+    {
+      "name": "DELETE - Excluir nota",
+      "request": {
+        "method": "DELETE",
+        "url": "{{baseUrl}}/api/notes/{{noteId}}"
+      }
+    }
   ]
 }
