@@ -1,0 +1,2 @@
+import React,{useState} from 'react';import{createRoot}from'react-dom/client';import'./style.css';
+function App(){const[count,setCount]=useState(0);return <main><h1>Meu primeiro projeto React</h1><p>Contador usando estado com useState.</p><div className="counter"><button onClick={()=>setCount(count-1)}>-</button><strong>{count}</strong><button onClick={()=>setCount(count+1)}>+</button></div><button className="reset" onClick={()=>setCount(0)}>Zerar</button></main>}createRoot(document.getElementById('root')).render(<App/>);

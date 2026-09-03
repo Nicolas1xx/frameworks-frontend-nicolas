@@ -1,0 +1,1 @@
+'use client';import{useState}from'react';export default function Home(){const[n,setN]=useState(0);return <main style={{fontFamily:'Arial',maxWidth:600,margin:'80px auto'}}><h1>Projeto Next.js</h1><p>Exemplo usando App Router e componente cliente.</p><button onClick={()=>setN(n+1)}>Interações: {n}</button></main>}

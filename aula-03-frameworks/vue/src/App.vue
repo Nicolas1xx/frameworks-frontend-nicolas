@@ -1,0 +1,1 @@
+<script setup>import{ref}from'vue';const nome=ref('Nicolas');const cliques=ref(0)</script><template><main><h1>Projeto Vue</h1><p>Olá, {{nome}}!</p><button @click="cliques++">Cliques: {{cliques}}</button></main></template><style>body{font-family:Arial;background:#f3f5f7}main{max-width:500px;margin:80px auto;background:white;padding:30px;border-radius:14px}</style>
