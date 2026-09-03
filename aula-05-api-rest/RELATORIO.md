@@ -6,7 +6,7 @@
 Desenvolver uma API REST para gerenciamento de notas, criar um front-end React que consuma essa API e documentar as operações no Postman.
 
 ## 2. Atividade 01 — Servidor básico com Express
-Servidor básico criado com Node.js e Express e configurado para publicação no Render.
+Servidor básico criado com Node.js e Express e publicado no Render.
 
 **URL publicada:** https://nicolas-aula05-servidor.onrender.com/
 
@@ -31,14 +31,24 @@ Aplicação React com formulário de criação/edição e lista de notas. O fron
 
 A URL da API também pode ser alterada por meio da variável de ambiente `VITE_API_URL`.
 
-## 5. Postman
+## 5. Validação do CRUD online
+O sistema foi testado após a publicação e as quatro operações principais funcionaram corretamente:
+
+- **GET:** listagem das notas carregada no front-end;
+- **POST:** criação da nota `Teste Nicolas` realizada com sucesso;
+- **PUT:** edição da nota realizada e refletida na interface;
+- **DELETE:** exclusão da nota realizada com sucesso, retornando a lista vazia.
+
+Com isso, o fluxo completo entre **Vercel (front-end)** e **Render (API)** foi validado em funcionamento real.
+
+## 6. Postman
 A coleção está em `postman/CRUD-Notas.postman_collection.json` e contém as quatro operações principais: GET, POST, PUT e DELETE.
 
 A variável `baseUrl` da coleção já aponta para:
 
 `https://nicolas-aula05-notas-api.onrender.com`
 
-## 6. Evidências e links
+## 7. Evidências e links
 - Repositório GitHub: https://github.com/Nicolas1xx/quiz-app
 - Servidor básico no Render: https://nicolas-aula05-servidor.onrender.com/
 - Back-end CRUD no Render: https://nicolas-aula05-notas-api.onrender.com/
@@ -47,7 +57,7 @@ A variável `baseUrl` da coleção já aponta para:
 - Coleção Postman: `aula-05-api-rest/postman/CRUD-Notas.postman_collection.json`
 - Link público da coleção Postman: **depende da publicação da coleção em uma conta Postman**
 
-## 7. Capturas solicitadas
+## 8. Capturas solicitadas
 Para a entrega final, registrar capturas das telas abaixo:
 1. código do back-end;
 2. servidor básico funcionando no Render;
@@ -58,5 +68,5 @@ Para a entrega final, registrar capturas das telas abaixo:
 7. requisição PUT no Postman;
 8. requisição DELETE no Postman.
 
-## 8. Conclusão
-A atividade aplica os principais conceitos de integração entre front-end e back-end: rotas REST, métodos HTTP, JSON, validação básica, CORS, consumo assíncrono e operações de CRUD. O servidor básico e o back-end foram publicados no Render, e o front-end React foi publicado na Vercel.
+## 9. Conclusão
+A atividade aplica os principais conceitos de integração entre front-end e back-end: rotas REST, métodos HTTP, JSON, validação básica, CORS, consumo assíncrono e operações de CRUD. O servidor básico e o back-end foram publicados no Render, o front-end React foi publicado na Vercel e o CRUD completo foi testado e validado online com sucesso.
