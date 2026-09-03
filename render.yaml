@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: nicolas-aula05-servidor
+    runtime: node
+    rootDir: aula-05-api-rest/atividade-01-servidor
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    autoDeploy: true
+
+  - type: web
+    name: nicolas-aula05-notas-api
+    runtime: node
+    rootDir: aula-05-api-rest/backend
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    autoDeploy: true
