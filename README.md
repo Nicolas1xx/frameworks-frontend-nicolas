@@ -14,8 +14,8 @@ Repositório organizado com as atividades desenvolvidas durante as aulas 01 a 05
 | 01 | Vanilla JS | `aula-01-vanilla/` | https://nicolas-aula01-vanilla.vercel.app/ |
 | 02 | React | `aula-02-react/` | https://nicolas-aula02-react.vercel.app/ |
 | 03 | Vue | `aula-03-frameworks/vue/` | https://nicolas-aula03-vue.vercel.app/ |
-| 03 | Angular | `aula-03-frameworks/angular/` | **deploy pendente** |
-| 03 | Next.js | `aula-03-frameworks/next/` | **deploy pendente** |
+| 03 | Angular | `aula-03-frameworks/angular/` | https://nicolas-aula03-angular-11yzljshs-nicolas-projects-5dadfeb0.vercel.app/ |
+| 03 | Next.js | `aula-03-frameworks/next/` | https://nicolas-aula03-next-kc0u5ifu4-nicolas-projects-5dadfeb0.vercel.app/ |
 | 04 | Consulta CEP | `aula-04-apis/consulta-cep/` | https://nicolas-aula04-consulta-cep.vercel.app/ |
 | 04 | Análise de 10 projetos com APIs | `aula-04-apis/analise-10-projetos.md` | leitura pelo GitHub |
 | 05 | CRUD de Notas | `aula-05-api-rest/` | https://nicolas-aula05-notas.vercel.app/ |
@@ -41,4 +41,4 @@ Cada projeto possui seu próprio README com instruções. Projetos Node usam `np
 
 ## Status
 
-As Aulas 01, 02 e 04 já possuem projetos publicados. Na Aula 03, o projeto Vue já está online; Angular e Next.js ainda aguardam deploy. A parte técnica da Aula 05 está publicada e o CRUD foi validado online com GET, POST, PUT e DELETE.
+As Aulas 01, 02, 03 e 04 estão com seus projetos publicados e disponíveis online. A Aula 05 também está publicada tecnicamente, com servidor Express, API REST no Render e front-end React na Vercel; o CRUD foi validado online com GET, POST, PUT e DELETE. A etapa restante da Aula 05 é apenas finalizar as evidências/Postman para a entrega.
