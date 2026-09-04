@@ -48,8 +48,10 @@ A variável `baseUrl` da coleção já aponta para:
 
 `https://nicolas-aula05-notas-api.onrender.com`
 
+A coleção também possui exemplos de resposta e salva automaticamente o identificador criado no POST para reutilização nas operações PUT e DELETE.
+
 ## 7. Evidências e links
-- Repositório GitHub: https://github.com/Nicolas1xx/quiz-app
+- Repositório GitHub: https://github.com/Nicolas1xx/frameworks-frontend-nicolas
 - Servidor básico no Render: https://nicolas-aula05-servidor.onrender.com/
 - Back-end CRUD no Render: https://nicolas-aula05-notas-api.onrender.com/
 - Endpoint GET das notas: https://nicolas-aula05-notas-api.onrender.com/api/notes
