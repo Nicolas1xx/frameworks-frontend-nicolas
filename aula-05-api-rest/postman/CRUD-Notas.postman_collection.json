@@ -1,7 +1,7 @@
 {
   "info": {
     "name": "Aula 05 - CRUD de Notas",
-    "description": "Coleção Postman para testar a API REST de notas publicada no Render.",
+    "description": "Coleção Postman para testar a API REST de notas publicada no Render. O POST salva automaticamente o ID criado na variável noteId para uso no PUT e DELETE.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
@@ -11,7 +11,7 @@
     },
     {
       "key": "noteId",
-      "value": "ID_DA_NOTA"
+      "value": ""
     }
   ],
   "item": [
@@ -20,10 +20,39 @@
       "request": {
         "method": "GET",
         "url": "{{baseUrl}}/api/notes"
-      }
+      },
+      "response": [
+        {
+          "name": "200 - Lista de notas",
+          "originalRequest": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/notes"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [{"key":"Content-Type","value":"application/json"}],
+          "cookie": [],
+          "body": "[]"
+        }
+      ]
     },
     {
       "name": "POST - Criar nota",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "  const data = pm.response.json();",
+              "  if (data.id) pm.collectionVariables.set('noteId', data.id);",
+              "}"
+            ]
+          }
+        }
+      ],
       "request": {
         "method": "POST",
         "header": [
@@ -31,10 +60,27 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"titulo\": \"Minha nota\",\n  \"conteudo\": \"Conteúdo de exemplo\"\n}"
+          "raw": "{\n  \"titulo\": \"Teste Nicolas\",\n  \"conteudo\": \"Teste da atividade Aula 05\"\n}"
         },
         "url": "{{baseUrl}}/api/notes"
-      }
+      },
+      "response": [
+        {
+          "name": "201 - Nota criada",
+          "originalRequest": {
+            "method": "POST",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body": {"mode":"raw","raw":"{\n  \"titulo\": \"Teste Nicolas\",\n  \"conteudo\": \"Teste da atividade Aula 05\"\n}"},
+            "url": "{{baseUrl}}/api/notes"
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [{"key":"Content-Type","value":"application/json"}],
+          "cookie": [],
+          "body": "{\n  \"id\": \"EXEMPLO_ID\",\n  \"titulo\": \"Teste Nicolas\",\n  \"conteudo\": \"Teste da atividade Aula 05\"\n}"
+        }
+      ]
     },
     {
       "name": "PUT - Atualizar nota",
@@ -45,17 +91,49 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"titulo\": \"Nota atualizada\",\n  \"conteudo\": \"Novo conteúdo\"\n}"
+          "raw": "{\n  \"titulo\": \"Teste Nicolas atualizado\",\n  \"conteudo\": \"Teste da atividade Aula 05 atualizado\"\n}"
         },
         "url": "{{baseUrl}}/api/notes/{{noteId}}"
-      }
+      },
+      "response": [
+        {
+          "name": "200 - Nota atualizada",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body": {"mode":"raw","raw":"{\n  \"titulo\": \"Teste Nicolas atualizado\",\n  \"conteudo\": \"Teste da atividade Aula 05 atualizado\"\n}"},
+            "url": "{{baseUrl}}/api/notes/{{noteId}}"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [{"key":"Content-Type","value":"application/json"}],
+          "cookie": [],
+          "body": "{\n  \"id\": \"EXEMPLO_ID\",\n  \"titulo\": \"Teste Nicolas atualizado\",\n  \"conteudo\": \"Teste da atividade Aula 05 atualizado\"\n}"
+        }
+      ]
     },
     {
       "name": "DELETE - Excluir nota",
       "request": {
         "method": "DELETE",
         "url": "{{baseUrl}}/api/notes/{{noteId}}"
-      }
+      },
+      "response": [
+        {
+          "name": "200 - Nota excluída",
+          "originalRequest": {
+            "method": "DELETE",
+            "url": "{{baseUrl}}/api/notes/{{noteId}}"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [{"key":"Content-Type","value":"application/json"}],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Nota excluída com sucesso\"\n}"
+        }
+      ]
     }
   ]
 }
