@@ -37,7 +37,7 @@ O sistema foi testado após a publicação e as quatro operações principais fu
 - **GET:** listagem das notas carregada no front-end;
 - **POST:** criação da nota `Teste Nicolas` realizada com sucesso;
 - **PUT:** edição da nota realizada e refletida na interface;
-- **DELETE:** exclusão da nota realizada com sucesso, retornando a lista vazia.
+- **DELETE:** exclusão da nota realizada com sucesso.
 
 Com isso, o fluxo completo entre **Vercel (front-end)** e **Render (API)** foi validado em funcionamento real.
 
@@ -50,6 +50,8 @@ A variável `baseUrl` da coleção já aponta para:
 
 A coleção também possui exemplos de resposta e salva automaticamente o identificador criado no POST para reutilização nas operações PUT e DELETE.
 
+Os testes foram realizados no **Postman Web**. Foram registradas capturas da coleção e das operações, incluindo evidências de resposta **200 OK** nas operações de atualização e exclusão, além das telas das requisições GET e POST.
+
 ## 7. Evidências e links
 - Repositório GitHub: https://github.com/Nicolas1xx/frameworks-frontend-nicolas
 - Servidor básico no Render: https://nicolas-aula05-servidor.onrender.com/
@@ -57,18 +59,16 @@ A coleção também possui exemplos de resposta e salva automaticamente o identi
 - Endpoint GET das notas: https://nicolas-aula05-notas-api.onrender.com/api/notes
 - Front-end no Vercel: https://nicolas-aula05-notas.vercel.app/
 - Coleção Postman: `aula-05-api-rest/postman/CRUD-Notas.postman_collection.json`
-- Link público da coleção Postman: **depende da publicação da coleção em uma conta Postman**
 
-## 8. Capturas solicitadas
-Para a entrega final, registrar capturas das telas abaixo:
-1. código do back-end;
-2. servidor básico funcionando no Render;
-3. API de notas funcionando no Render;
-4. front-end React funcionando na Vercel;
-5. requisição GET no Postman;
-6. requisição POST no Postman;
-7. requisição PUT no Postman;
-8. requisição DELETE no Postman.
+## 8. Capturas registradas
+As evidências visuais preparadas para a entrega incluem:
+
+1. coleção **Aula 05 - CRUD de Notas** importada no Postman Web;
+2. requisição **GET - Listar notas**;
+3. requisição **POST - Criar nota**;
+4. requisição **PUT - Atualizar nota**, com exemplo de resposta `200 OK`;
+5. requisição **DELETE - Excluir nota**, com resposta `200 OK` e mensagem `Nota excluída com sucesso`;
+6. aplicações e serviços publicados na Vercel e no Render.
 
 ## 9. Conclusão
-A atividade aplica os principais conceitos de integração entre front-end e back-end: rotas REST, métodos HTTP, JSON, validação básica, CORS, consumo assíncrono e operações de CRUD. O servidor básico e o back-end foram publicados no Render, o front-end React foi publicado na Vercel e o CRUD completo foi testado e validado online com sucesso.
+A atividade aplica os principais conceitos de integração entre front-end e back-end: rotas REST, métodos HTTP, JSON, validação básica, CORS, consumo assíncrono e operações de CRUD. O servidor básico e o back-end foram publicados no Render, o front-end React foi publicado na Vercel, a coleção Postman foi preparada e importada, e o CRUD completo foi testado e validado online com sucesso.
