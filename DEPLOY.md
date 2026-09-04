@@ -1,25 +1,27 @@
-# Publicação final — Frameworks Front-end
+# Deploys — Frameworks Front-end
 
 ## Render
-O arquivo `render.yaml` na raiz já está configurado para criar dois serviços:
+O arquivo `render.yaml` na raiz configura os dois serviços publicados da Aula 05:
 
-1. `nicolas-aula05-servidor` — Atividade 01 da Aula 05.
-2. `nicolas-aula05-notas-api` — API CRUD de notas.
+1. [`nicolas-aula05-servidor`](https://nicolas-aula05-servidor.onrender.com/) — atividade de servidor Express.
+2. [`nicolas-aula05-notas-api`](https://nicolas-aula05-notas-api.onrender.com/) — API CRUD de notas.
 
-No Render, basta criar um Blueprint a partir deste repositório. O serviço da API deverá disponibilizar a rota:
+O endpoint principal da API está disponível em:
 
-`/api/notes`
+https://nicolas-aula05-notas-api.onrender.com/api/notes
 
 ## Vercel
-Importar este repositório e definir como Root Directory:
+O front-end da Aula 05 utiliza a seguinte pasta como Root Directory:
 
 `aula-05-api-rest/frontend`
 
-Adicionar a variável de ambiente:
+Variável de ambiente utilizada pelo front-end:
 
-`VITE_API_URL=https://URL-DO-RENDER/api/notes`
+`VITE_API_URL=https://nicolas-aula05-notas-api.onrender.com/api/notes`
 
-O projeto já possui `vercel.json`, Vite e comando de build configurados.
+Projeto publicado: https://nicolas-aula05-notas.vercel.app/
+
+O diretório possui `vercel.json`, Vite e comando de build configurados.
 
 ## Postman
 Importar o arquivo existente em:
@@ -29,7 +31,7 @@ Importar o arquivo existente em:
 A coleção contém GET, POST, PUT e DELETE. Substituir a variável/base URL pela URL da API publicada no Render e executar as quatro operações.
 
 ## Relatório
-Depois dos deploys, registrar no relatório:
+O relatório da atividade deve registrar:
 
 - link do repositório GitHub;
 - link do servidor básico no Render;
